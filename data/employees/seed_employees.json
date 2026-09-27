@@ -1,0 +1,64 @@
+[
+  {
+    "employee_id": "EMP-001",
+    "employee_category": "standard",
+    "cost_center": "CC-001",
+    "grade": "G6",
+    "home_city": "Kazan",
+    "policy_tier": "default",
+    "max_hotel_per_night": 7000,
+    "max_flight_class": "economy",
+    "requires_preapproval_over_amount": 45000,
+    "accessibility_requirements": []
+  },
+  {
+    "employee_id": "EMP-002",
+    "employee_category": "manager",
+    "cost_center": "CC-002",
+    "grade": "M2",
+    "home_city": "Kazan",
+    "policy_tier": "manager",
+    "max_hotel_per_night": 12000,
+    "max_flight_class": "business",
+    "requires_preapproval_over_amount": 90000,
+    "accessibility_requirements": []
+  },
+  {
+    "employee_id": "EMP-003",
+    "employee_category": "regional",
+    "cost_center": "CC-REG-01",
+    "grade": "G7",
+    "home_city": "Yekaterinburg",
+    "policy_tier": "regional",
+    "max_hotel_per_night": 8000,
+    "max_flight_class": "economy",
+    "requires_preapproval_over_amount": 50000,
+    "accessibility_requirements": []
+  },
+  {
+    "employee_id": "EMP-004",
+    "employee_category": "mobility",
+    "cost_center": "CC-004",
+    "grade": "G6",
+    "home_city": "Kazan",
+    "policy_tier": "mobility",
+    "max_hotel_per_night": 9000,
+    "max_flight_class": "premium_economy",
+    "requires_preapproval_over_amount": 60000,
+    "accessibility_requirements": [
+      "wheelchair_access"
+    ]
+  },
+  {
+    "employee_id": "EMP-005",
+    "employee_category": "special_budget",
+    "cost_center": "CC-SPECIAL-01",
+    "grade": "G8",
+    "home_city": "Kazan",
+    "policy_tier": "special_budget",
+    "max_hotel_per_night": 15000,
+    "max_flight_class": "business",
+    "requires_preapproval_over_amount": 150000,
+    "accessibility_requirements": []
+  }
+]

@@ -1,0 +1,58 @@
+cases:
+  - id: transport_class_rule
+    query: "допустимый класс обслуживания для standard"
+    employee_category: standard
+    expected_document_ids:
+      - POLICY-TRANSPORT
+  - id: transport_class_business_manager
+    query: "когда руководителю доступен бизнес-класс перелета"
+    employee_category: manager
+    expected_document_ids:
+      - POLICY-TRANSPORT
+  - id: hotel_limit_rule
+    query: "лимит проживания за ночь для manager"
+    employee_category: manager
+    expected_document_ids:
+      - POLICY-HOTEL
+  - id: hotel_limit_standard
+    query: "какой лимит на отель для обычного сотрудника"
+    employee_category: standard
+    expected_document_ids:
+      - POLICY-HOTEL
+  - id: preapproval_budget_rule
+    query: "предсогласование при превышении порога бюджета"
+    employee_category: standard
+    expected_document_ids:
+      - POLICY-BUDGET
+  - id: preapproval_budget_manager
+    query: "нужно ли согласование если общая стоимость выше порога сотрудника"
+    employee_category: manager
+    expected_document_ids:
+      - POLICY-BUDGET
+  - id: mobility_exception_rule
+    query: "mobility exception wheelchair_access ночной вылет"
+    employee_category: mobility
+    expected_document_ids:
+      - POLICY-EXCEPTIONS
+  - id: mobility_and_night_rules
+    query: "исключения по ночному вылету для сотрудника с ограничением мобильности"
+    employee_category: mobility
+    expected_document_ids:
+      - POLICY-EXCEPTIONS
+      - POLICY-TRANSPORT
+  - id: citation_requirements
+    query: "покажи общие требования к источникам и корпоративной политике командировок"
+    employee_category: standard
+    expected_document_ids:
+      - POLICY-GENERAL
+  - id: mixed_budget_and_transport
+    query: "правила по классу перелета и бюджетным ограничениям в одной поездке"
+    employee_category: standard
+    expected_document_ids:
+      - POLICY-TRANSPORT
+      - POLICY-BUDGET
+  - id: negative_irrelevant_query_safe
+    query: "погода в казани на завтра и лучший ресторан"
+    employee_category: standard
+    expected_document_ids:
+      - POLICY-GENERAL
